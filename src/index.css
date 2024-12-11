@@ -1,0 +1,307 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #eaf7ff73;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Headers */
+h1, h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Flexbox for Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Mobile and Tablet Layout */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}
+/* Hover Effects for Cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for List Items */
+li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Smooth Transitions for Links */
+a {
+  transition: color 0.3s ease;
+}
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+}
+
+ul, ol {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
+/* Center the todo list container */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Heading styling */
+.todo-container h2 {
+  color: #444;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the task list */
+.todo-container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.todo-container li {
+  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Styling for the input field */
+.todo-container input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.todo-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Styling for the add button */
+.todo-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-container button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Center the weather container */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Heading styling for Weather */
+.weather-container h2 {
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the weather details */
+.weather-container p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Error message styling */
+.weather-container p.error {
+  color: #ff4d4d; /* Red color for error */
+  font-size: 1.1rem;
+}
